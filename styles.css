@@ -25,7 +25,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Animated Background with Floating Particles */
 .bg-animation {
     position: fixed;
     top: 0;
@@ -78,7 +77,6 @@ body {
     100% { left: 100%; }
 }
 
-/* Navigation */
 nav {
     position: fixed;
     top: 0;
@@ -157,7 +155,6 @@ nav .container {
     width: 100%;
 }
 
-/* Hero Section */
 .hero {
     min-height: 70vh;
     display: flex;
@@ -334,7 +331,6 @@ nav .container {
 .string { color: var(--text-secondary); }
 .function { color: var(--text-primary); }
 
-/* Section Styles */
 section {
     padding: 3rem 5%;
     max-width: 1400px;
@@ -350,7 +346,6 @@ h2 {
     text-shadow: 0 0 60px rgba(255, 255, 255, 0.1);
 }
 
-/* About Section */
 .about-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -446,7 +441,6 @@ h2 {
     font-weight: 600;
 }
 
-/* Timeline */
 .timeline {
     position: relative;
     padding: 1rem 0;
@@ -572,7 +566,6 @@ h2 {
     font-size: 0.85rem;
 }
 
-/* Projects */
 .project-card {
     background: var(--glass-bg);
     backdrop-filter: blur(30px);
@@ -678,8 +671,6 @@ h2 {
     transform: translateY(-2px);
 }
 
-/* Skills */
-/* Skills */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -725,7 +716,6 @@ h2 {
     cursor: pointer;
 }
 
-
 .skill-item::before {
     content: '';
     position: absolute;
@@ -758,7 +748,6 @@ h2 {
     z-index: 1;
 }
 
-/* Contact */
 .contact-content {
     text-align: center;
     max-width: 700px;
@@ -901,7 +890,6 @@ h2 {
     width: 100%;
 }
 
-/* NEW: Grid for Capstone and Research - side by side */
 .projects-grid-side-by-side {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -953,7 +941,6 @@ h2 {
     border-right: 1px solid var(--glass-border);
 }
 
-/* NEW: Grid for Deployed School Projects - 2 side by side, 1 centered below */
 .projects-grid-deployed {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1020,7 +1007,6 @@ h2 {
     color: var(--text-secondary);
 }
 
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1060,7 +1046,6 @@ h2 {
     transform: translateY(0);
 }
 
-/* Responsive */
 @media (max-width: 968px) {
     nav {
         padding: 1.5rem 3%;
@@ -1087,7 +1072,7 @@ h2 {
         font-size: 14px;
     }
 
-    /* Ensure all sections are visible on mobile regardless of fade-in state */
+    
     section {
         opacity: 1 !important;
         transform: translateY(0) !important;
@@ -1449,7 +1434,7 @@ h2 {
 }
 
 @media (max-width: 480px) {
-    /* Ensure all sections are visible on small mobile */
+    
     section {
         opacity: 1 !important;
         transform: translateY(0) !important;
@@ -1524,7 +1509,7 @@ h2 {
         font-size: 1rem;
     }
 }
-/* 2x3 Grid for School Projects */
+
 .projects-grid-2x3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1543,7 +1528,6 @@ h2 {
     }
 }
 
-/* Ongoing Status Tag */
 .status-ongoing {
     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
     color: white;
@@ -1597,7 +1581,6 @@ h2 {
     }
 }
 
-/* Image Modal/Lightbox */
 .modal {
     display: none;
     position: fixed;
@@ -1617,13 +1600,15 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px 20px;
 }
 
 .modal-content {
-    margin: auto;
+    margin: 0 auto;
     display: block;
-    max-width: 90%;
-    max-height: 90vh;
+    max-width: 85%;
+    max-height: 85vh;
     object-fit: contain;
     animation: zoomIn 0.3s ease;
     border: 2px solid var(--glass-border);
@@ -1641,14 +1626,15 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 300;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
     z-index: 1001;
-    line-height: 1;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+    padding: 0;
+    border: none;
 }
 
 .modal-close:hover {
@@ -1693,7 +1679,6 @@ h2 {
     }
 }
 
-/* Mobile adjustments for modal */
 @media (max-width: 768px) {
     .modal-content {
         max-width: 95%;
@@ -1705,7 +1690,7 @@ h2 {
         right: 15px;
         width: 40px;
         height: 40px;
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .modal-caption {
