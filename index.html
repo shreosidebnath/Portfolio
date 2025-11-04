@@ -32,7 +32,7 @@
                 <div class="subtitle">Software Engineer</div>
                 <p>Full-stack developer passionate about building scalable solutions. Experienced in industrial automation, machine learning, and modern web technologies.</p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#deployed-projects" class="btn btn-primary">View My Work</a>
                     <a href="ShreosiDebnath.pdf" class="btn btn-secondary" download>Resume</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
@@ -148,7 +148,7 @@
         <div class="project-section">
             <h3 class="section-title">Internship Projects</h3>
             <div class="projects-grid-2x2">
-                <div class="project-card">
+                <div class="project-card internship-card" data-image="Carseal.png" data-title="Carseal Application">
                     <div class="project-image">
                         <img src="Carseal.png" alt="Carseal Application" class="project-img">
                     </div>
@@ -166,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card internship-card" data-image="LabData.jpg" data-title="Lab Data Interface">
                     <div class="project-image">
                         <img src="LabData.jpg" alt="Lab Data Interface" class="project-img">
                     </div>
@@ -182,7 +182,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card internship-card" data-image="LiveDataBase.png" data-title="DeltaV Graphic Tracker">
                     <div class="project-image">
                         <img src="LiveDataBase.png" alt="DeltaV Graphic Tracker" class="project-img">
                     </div>
@@ -199,7 +199,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card internship-card" data-image="Network.jpg" data-title="Network Asset Management">
                     <div class="project-image">
                         <img src="Network.jpg" alt="Network Asset Management" class="project-img">
                     </div>
@@ -218,16 +218,17 @@
             </div>
         </div>
 
-        <!-- Capstone Project -->
+        <!-- Capstone & Research Projects - Side by Side -->
         <div class="project-section">
-            <h3 class="section-title">Capstone Project</h3>
-            <div class="project-full">
+            <h3 class="section-title">Capstone & Research Projects</h3>
+            <div class="projects-grid-side-by-side">
                 <div class="project-card-full">
                     <div class="project-image">
                         <img src="capstone.jpg" alt="Kria 260 Board" class="project-img">
                     </div>
                     <div class="project-info">
                         <h4>10Gb Ethernet MAC Refactor</h4>
+                        <span class="project-tag">Capstone</span>
                         <p>Refactoring legacy 10Gb Ethernet MAC from Verilog to Chisel, implementing 10GBASE-R Physical Coding Sublayer (PCS) and validating on FPGA for commercial ASIC compatibility.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">Chisel</span>
@@ -236,19 +237,11 @@
                             <span class="tech-tag">Hardware</span>
                         </div>
                         <div class="project-links">
-                            <div class="project-links">
-                                <a href="#" class="project-link project-link-ongoing"></a>
-                            </div>
+                            <a href="#" class="project-link project-link-ongoing"></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Research Project -->
-        <div class="project-section">
-            <h3 class="section-title">Research Project</h3>
-            <div class="project-full">
                 <div class="project-card-full" onclick="window.open('https://github.com/shreosidebnath/Fuel-Price-Analyzer', '_blank')" style="cursor: pointer;">
                     <div class="project-image">
                         <img src="FuelPriceAnalyzer.jpg" alt="Fuel Price Prediction" class="project-img">
@@ -271,13 +264,63 @@
             </div>
         </div>
 
-        <!-- Deployed School Project -->
-        <div class="project-section">
-            <h3 class="section-title">Deployed School Project</h3>
-            <div class="project-full"></div>
-                <div class="project-card-full">
+        <!-- Deployed School Projects -->
+        <div class="project-section" id="deployed-projects">
+            <h3 class="section-title">Deployed School Projects</h3>
+            <div class="projects-grid-deployed">
+                <div class="project-card" onclick="window.open('https://alberta-energy-dashboard.vercel.app/', '_blank')" style="cursor: pointer;">
                     <div class="project-image">
-                        <img src="QuizGame.jpg" alt="QuizGame" class="project-img">
+                        <img src="AlbertaEnergy.jpg" alt="Alberta Energy Dashboard" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h4>Alberta Energy Dashboard</h4>
+                        <span class="project-tag">Live Demo</span>
+                        <p>Interactive dashboard visualizing Alberta's energy data with real-time charts and geospatial mapping.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Leaflet</span>
+                            <span class="tech-tag">Recharts</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">PostGIS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://alberta-energy-dashboard.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">Visit Site</a>
+                            <a href="https://github.com/shreosidebnath/alberta-energy-dashboard" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="window.open('https://shreosidebnath.github.io/movie-recommender/#', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="MovieRecom.jpg" alt="Movie Recommender" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h4>Movie Recommender</h4>
+                        <span class="project-tag">Live Demo</span>
+                        <p>Small scale ML model that suggests movies based on user's selection. Results get more accurate with more selection.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">Render</span>
+                            <span class="tech-tag">Cron Job</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://shreosidebnath.github.io/movie-recommender/#" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">Get Recommendation</a>
+                            <a href="https://github.com/shreosidebnath/movie-recommender" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="window.open('https://shreosidebnath.github.io/QuizGame/', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="QuizGame.jpg" alt="Quiz Game" class="project-img">
                     </div>
                     <div class="project-info">
                         <h4>Quiz Game</h4>
@@ -288,68 +331,13 @@
                             <span class="tech-tag">HTML/CSS</span>
                         </div>
                         <div class="project-links">
-                            <div class="project-links">
-                                <a href="https://shreosidebnath.github.io/QuizGame/" class="project-link" target="_blank" rel="noopener noreferrer">Play Now</a>
-                                <a href="https://github.com/shreosidebnath/QuizGame" class="project-link" target="_blank" rel="noopener noreferrer">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="project-full"></div>
-                <div class="project-card-full">
-                    <div class="project-image">
-                        <img src="MovieRecom.jpg" alt="MovieRecommender" class="project-img">
-                    </div>
-                    <div class="project-info">
-                        <h4>Movie Recommender</h4>
-                        <span class="project-tag">Live Demo</span>
-                        <p>Small scale ML model that suggests movies based on user's selection. Results get more accurate with more selection</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TailWind</span>
-                            <span class="tech-tag">NodeJS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <div class="project-links">
-                                <a href="https://shreosidebnath.github.io/movie-recommender/#" class="project-link" target="_blank" rel="noopener noreferrer">Get recommendation</a>
-                                <a href="https://github.com/shreosidebnath/movie-recommender" class="project-link" target="_blank" rel="noopener noreferrer">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-full"></div>
-                <div class="project-card-full">
-                    <div class="project-image">
-                        <img src="AlbertaEnergy.jpg" alt="AlbertaEnergyDashboard" class="project-img">
-                    </div>
-                    <div class="project-info">
-                        <h4>Alberta Energy Dashboard</h4>
-                        <span class="project-tag">Live Demo</span>
-                        <p>description goes here</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <div class="project-links">
-                                <a href="https://alberta-energy-dashboard.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Visit Site</a>
-                                <a href="https://github.com/shreosidebnath/alberta-energy-dashboard" class="project-link" target="_blank" rel="noopener noreferrer">Source Code</a>
-                            </div>
+                            <a href="https://shreosidebnath.github.io/QuizGame/" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">Play Now</a>
+                            <a href="https://github.com/shreosidebnath/QuizGame" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">View Source Code</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!-- School Projects -->
         <div class="project-section">
@@ -367,6 +355,8 @@
                         <p>Online Marketplace for buying and renting</p>
                         <div class="tech-stack">
                             <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
                             <span class="tech-tag">HTML/CSS</span>
                         </div>
                     </div>
@@ -390,7 +380,7 @@
 
                 <div class="project-card" onclick="window.open('https://github.com/shreosidebnath/Resturant-reservation-System', '_blank')" style="cursor: pointer;">
                     <div class="project-image">
-                        <img src="Resturant.jpg" alt="Resturant Reservation System" class="project-img">
+                        <img src="Resturant.jpg" alt="Restaurant Reservation System" class="project-img">
                     </div>
                     <div class="project-info">
                         <h4>Restaurant Reservation System</h4>
@@ -406,7 +396,7 @@
                 
                 <div class="project-card" onclick="window.open('https://github.com/shreosidebnath/File-Transfer', '_blank')" style="cursor: pointer;">
                     <div class="project-image">
-                        <img src="SecureMailingSystem.jpg" alt="SecureMailingService" class="project-img">
+                        <img src="SecureMailingSystem.jpg" alt="Secure Mailing Service" class="project-img">
                     </div>
                     <div class="project-info">
                         <h4>Secure Emailing System</h4>
@@ -422,7 +412,7 @@
 
                 <div class="project-card" onclick="window.open('https://github.com/shreosidebnath/AirlineTerminalApplication', '_blank')" style="cursor: pointer;">
                     <div class="project-image">
-                        <img src="FlightReservation.jpg" alt="FlightReservation" class="project-img">
+                        <img src="FlightReservation.jpg" alt="Flight Reservation" class="project-img">
                     </div>
                     <div class="project-info">
                         <h4>Flight Reservation System</h4>
@@ -465,6 +455,7 @@
                     <span class="skill-item"><span>Java</span></span>
                     <span class="skill-item"><span>SQL</span></span>
                     <span class="skill-item"><span>JavaScript</span></span>
+                    <span class="skill-item"><span>TypeScript</span></span>
                     <span class="skill-item"><span>React</span></span>
                     <span class="skill-item"><span>Node.js</span></span>
                     <span class="skill-item"><span>C/C++</span></span>
@@ -473,13 +464,17 @@
             </div>
 
             <div class="skill-category">
-                <h3>Technologies</h3>
+                <h3>Technologies & Frameworks</h3>
                 <div class="skill-list">
                     <span class="skill-item"><span>Visual Studio</span></span>
                     <span class="skill-item"><span>GitHub</span></span>
                     <span class="skill-item"><span>Linux</span></span>
                     <span class="skill-item"><span>Kepware</span></span>
                     <span class="skill-item"><span>SolidWorks</span></span>
+                    <span class="skill-item"><span>FastAPI</span></span>
+                    <span class="skill-item"><span>Leaflet</span></span>
+                    <span class="skill-item"><span>Recharts</span></span>
+                    <span class="skill-item"><span>Tailwind CSS</span></span>
                 </div>
             </div>
 
@@ -488,10 +483,21 @@
                 <div class="skill-list">
                     <span class="skill-item"><span>SQL Server</span></span>
                     <span class="skill-item"><span>PostgreSQL</span></span>
+                    <span class="skill-item"><span>PostGIS</span></span>
                     <span class="skill-item"><span>Power BI</span></span>
                     <span class="skill-item"><span>Azure</span></span>
                     <span class="skill-item"><span>Pandas</span></span>
                     <span class="skill-item"><span>NumPy</span></span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Cloud & Deployment</h3>
+                <div class="skill-list">
+                    <span class="skill-item"><span>Render</span></span>
+                    <span class="skill-item"><span>Vercel</span></span>
+                    <span class="skill-item"><span>GitHub Pages</span></span>
+                    <span class="skill-item"><span>Cron Jobs</span></span>
                 </div>
             </div>
         </div>
@@ -520,6 +526,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Image Modal/Lightbox -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Project Image">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
