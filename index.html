@@ -9,7 +9,7 @@
 <body>
     <div class="bg-animation"></div>
 
-    
+    <!-- Navigation -->
     <nav id="navbar">
         <div class="container">
             <div class="logo">SD</div>
@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
@@ -56,7 +56,7 @@
         </div>
     </section>
 
-    
+    <!-- About Section -->
     <section id="about" class="fade-in">
         <h2>About Me</h2>
         <div class="about-content">
@@ -85,11 +85,29 @@
         </div>
     </section>
 
-    
+    <!-- Experience Section -->
     <section id="experience" class="fade-in">
         <h2>Experience</h2>
         <div class="timeline">
             <div class="timeline-item timeline-item-1">
+                <div class="timeline-content">
+                    <h3>Software Developer</h3>
+                    <h4>Altivion</h4>
+                    <ul>
+                        <li>Developing drone detection systems using Go microservices</li>
+                        <li>Building distributed systems for real-time data processing</li>
+                        <li>Implementing security features and system architecture</li>
+                    </ul>
+                </div>
+                <div class="timeline-date">
+                    <span class="date-badge">Sep 2025 - Apr 2026</span>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-item-2">
+                <div class="timeline-date">
+                    <span class="date-badge">Jan 2024 - Apr 2025</span>
+                </div>
                 <div class="timeline-content">
                     <h3>Industrial Automation Engineering Intern</h3>
                     <h4>CNRL - Kirby & Jackfish, AB</h4>
@@ -99,15 +117,9 @@
                         <li>Developed security-focused automation software</li>
                     </ul>
                 </div>
-                <div class="timeline-date">
-                    <span class="date-badge">Jan 2024 - Apr 2025</span>
-                </div>
             </div>
 
-            <div class="timeline-item timeline-item-2">
-                <div class="timeline-date">
-                    <span class="date-badge">Sep 2021 - Dec 2021</span>
-                </div>
+            <div class="timeline-item timeline-item-3">
                 <div class="timeline-content">
                     <h3>Undergraduate Research Assistant</h3>
                     <h4>University of Calgary - Machine Learning</h4>
@@ -117,11 +129,14 @@
                         <li>Created predictive models and visualizations</li>
                     </ul>
                 </div>
+                <div class="timeline-date">
+                    <span class="date-badge">Sep 2021 - Dec 2021</span>
+                </div>
             </div>
         </div>
     </section>
 
-    
+    <!-- Education Section -->
     <section id="education" class="fade-in">
         <h2>Education</h2>
         <div class="education-grid">
@@ -140,11 +155,11 @@
         </div>
     </section>
 
-    
+    <!-- Projects Section -->
     <section id="projects" class="fade-in">
         <h2>Projects</h2>
 
-        
+        <!-- Internship Projects -->
         <div class="project-section">
             <h3 class="section-title">Internship Projects</h3>
             <div class="projects-grid-2x2">
@@ -218,7 +233,7 @@
             </div>
         </div>
 
-        
+        <!-- Capstone & Research Projects -->
         <div class="project-section">
             <h3 class="section-title">Capstone & Research Projects</h3>
             <div class="projects-grid-side-by-side">
@@ -264,10 +279,10 @@
             </div>
         </div>
 
-        
+        <!-- Deployed Projects -->
         <div class="project-section" id="deployed-projects">
             <h3 class="section-title">Deployed Projects</h3>
-            <div class="projects-grid-deployed">
+            <div class="projects-grid-2x2">
                 <div class="project-card" onclick="window.open('https://alberta-energy-dashboard.vercel.app/', '_blank')" style="cursor: pointer;">
                     <div class="project-image">
                         <img src="AlbertaEnergy.jpg" alt="Alberta Energy Dashboard" class="project-img">
@@ -289,6 +304,30 @@
                         <div class="project-links">
                             <a href="https://alberta-energy-dashboard.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">Visit Site</a>
                             <a href="https://github.com/shreosidebnath/alberta-energy-dashboard" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="window.open('https://coinpulse-3sk4.onrender.com/users/sign_in', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="CoinPulse.jpg" alt="CoinPulse" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h4>CoinPulse</h4>
+                        <span class="project-tag">Live Demo</span>
+                        <p>Real-time cryptocurrency tracker built with Ruby on Rails. Track prices, manage watchlists, and get market insights.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Ruby on Rails</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Sidekiq</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Devise</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://coinpulse-3sk4.onrender.com/users/sign_in" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">Visit Site</a>
+                            <a href="https://github.com/shreosidebnath/CoinPulse" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">View Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -339,7 +378,7 @@
             </div>
         </div>
 
-        
+        <!-- School Projects -->
         <div class="project-section">
             <h3 class="section-title">School Projects</h3>
             <div class="projects-grid-2x3">
@@ -443,7 +482,7 @@
         </div>
     </section>
 
-    
+    <!-- Skills Section -->
     <section id="skills" class="fade-in">
         <h2>Technical Skills</h2>
         <div class="skills-container">
@@ -452,29 +491,35 @@
                 <div class="skill-list">
                     <span class="skill-item"><span>C#</span></span>
                     <span class="skill-item"><span>Python</span></span>
+                    <span class="skill-item"><span>Ruby on Rails</span></span>
+                    <span class="skill-item"><span>Go</span></span>
                     <span class="skill-item"><span>Java</span></span>
                     <span class="skill-item"><span>SQL</span></span>
                     <span class="skill-item"><span>JavaScript</span></span>
-                    <span class="skill-item"><span>TypeScript</span></span>
                     <span class="skill-item"><span>React</span></span>
                     <span class="skill-item"><span>Node.js</span></span>
                     <span class="skill-item"><span>C/C++</span></span>
                     <span class="skill-item"><span>HTML/CSS</span></span>
+                    <span class="skill-item"><span>PHP</span></span>
                 </div>
             </div>
 
             <div class="skill-category">
-                <h3>Technologies & Frameworks</h3>
+                <h3>Technologies</h3>
                 <div class="skill-list">
                     <span class="skill-item"><span>Visual Studio</span></span>
                     <span class="skill-item"><span>GitHub</span></span>
                     <span class="skill-item"><span>Linux</span></span>
                     <span class="skill-item"><span>Kepware</span></span>
                     <span class="skill-item"><span>SolidWorks</span></span>
-                    <span class="skill-item"><span>FastAPI</span></span>
-                    <span class="skill-item"><span>Leaflet</span></span>
-                    <span class="skill-item"><span>Recharts</span></span>
+                    <span class="skill-item"><span>Matplotlib</span></span>
+                    <span class="skill-item"><span>Redis</span></span>
+                    <span class="skill-item"><span>Sidekiq</span></span>
                     <span class="skill-item"><span>Tailwind CSS</span></span>
+                    <span class="skill-item"><span>Chart.js</span></span>
+                    <span class="skill-item"><span>Devise</span></span>
+                    <span class="skill-item"><span>Render</span></span>
+                    <span class="skill-item"><span>Mapbox</span></span>
                 </div>
             </div>
 
@@ -483,27 +528,19 @@
                 <div class="skill-list">
                     <span class="skill-item"><span>SQL Server</span></span>
                     <span class="skill-item"><span>PostgreSQL</span></span>
-                    <span class="skill-item"><span>PostGIS</span></span>
+                    <span class="skill-item"><span>Oracle</span></span>
                     <span class="skill-item"><span>Power BI</span></span>
                     <span class="skill-item"><span>Azure</span></span>
                     <span class="skill-item"><span>Pandas</span></span>
                     <span class="skill-item"><span>NumPy</span></span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Cloud & Deployment</h3>
-                <div class="skill-list">
-                    <span class="skill-item"><span>Render</span></span>
-                    <span class="skill-item"><span>Vercel</span></span>
-                    <span class="skill-item"><span>GitHub Pages</span></span>
-                    <span class="skill-item"><span>Cron Jobs</span></span>
+                    <span class="skill-item"><span>Scikit-learn</span></span>
+                    <span class="skill-item"><span>MongoDB</span></span>
                 </div>
             </div>
         </div>
     </section>
 
-    
+    <!-- Contact Section -->
     <section id="contact" class="fade-in">
         <h2>Let's Connect</h2>
         <div class="contact-content">
@@ -527,7 +564,7 @@
         </div>
     </section>
 
-    
+    <!-- Image Modal -->
     <div id="imageModal" class="modal">
         <span class="modal-close">&times;</span>
         <img class="modal-content" id="modalImage" alt="Project Image">
